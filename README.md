@@ -2,8 +2,7 @@
 
 ### **Introduction**
 This git repository is created for Covid-19 Sentiment Analysis project. This project is implemented in these methods:
-1. 
-
+1. Embeded sequential model to train the model to classify social media posts based on whether the posts are negative or positive in nature.
 
 ### **Software requirements**
 1. Python 3.7 or above
