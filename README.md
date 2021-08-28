@@ -1,8 +1,11 @@
-### **WIP**
+## **WIP** 
+In local-machine testing phase. Test package conflicts between tensorflow and keras such to make sure package versions line up with one another.
 
 ### **Introduction**
 This git repository is created for Covid-19 Sentiment Analysis project. This project is implemented in these methods:
-1. Embeded sequential model to train the model to classify social media posts based on whether the posts are negative or positive in nature.
+1. Utilized a data pre-processing methodology to get rid of symbols and stopwords.
+2. Deployed a convolutional neural network (CNN) to train the model to classify social media posts based on categories ("medical research", "social events", "pandemic data", "administrative policy").
+3. Converted the model into plots to view accuracy of each epoch.
 
 ### **Software requirements**
 1. Python 3.7 or above
@@ -15,8 +18,9 @@ This git repository is created for Covid-19 Sentiment Analysis project. This pro
 #### **II - Set up the virtual environment**
 1. Create a new folder and name it as COVID19_SentimentAnalysis.
 2. Copy news_classification.py from cloned repository and place it inside COVID19_SentimentAnalysis folder.
-3. Download the training_data_set_unduplicate.csv from the clones repository and place it inside the COVID19_SentimentAnalysis folder.
-4. In Visual Studio Code, go to Terminal and run the below in cmd terminal. This creates a virtual environment called "sentimentanalysis-venv"
+3. Download [GoogleNews-vectors-negative300.bin](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g) and place it inside the COVID19_SentimentAnalysis folder.
+4. Download the training_data_set_unduplicate.csv from the clones repository and place it inside the COVID19_SentimentAnalysis folder.
+5. In Visual Studio Code, go to Terminal and run the below in cmd terminal. This creates a virtual environment called "sentimentanalysis-venv"
    
             python -m venv sentimentanalysis-venv
 5. For Windows, run below line to activate the virtual environment
