@@ -60,7 +60,7 @@ nb_words = min(MAX_NB_WORDS, len(word_index))+1
 
 embedding_matrix = np.zeros((nb_words, EMBEDDING_DIM))
 for word, i in word_index.items():
-    if word in word2vec.vocab:
+    if word in word2vec.key_to_index:
         embedding_matrix[i] = word2vec.word_vec(word)
 print('Null word embeddings: %d' % np.sum(np.sum(embedding_matrix, axis=1) == 0))
 
