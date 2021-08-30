@@ -30,7 +30,7 @@ This git repository is created for Covid-19 Sentiment Analysis project. This pro
    
 #### **III - Install python packages**
 
-            pip install numpy pandas gensim keras nltk sklearn re       
+            pip install -r requirements.txt        
 
 #### **IV - Run the script**
 Now, we are all set to run the script.
