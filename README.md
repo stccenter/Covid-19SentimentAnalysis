@@ -1,4 +1,4 @@
-### **Introduction:Covid-19 Sentiment Analysis**
+# **Introduction: Covid-19 Sentiment Analysis**
 The project implementation consists of the following methods:
 1. A data pre-processing methodology to get rid of symbols and stopwords.
 2. A convolutional neural network (CNN) to train the model to classify social media posts based on categories ("medical research", "social events", "pandemic data", "administrative policy").
@@ -10,9 +10,9 @@ The project implementation consists of the following methods:
 
 ### **Standard CPU-based implementation**
 
-#### **I - Clone the repository**
+###### **Clone the repository**
 
-#### **II - Set up the virtual environment**
+###### **Set up the virtual environment**
 1. Create a new folder and name it as COVID19_SentimentAnalysis.
 2. Copy news_classification.py from cloned repository and place it inside COVID19_SentimentAnalysis folder.
 3. Download [GoogleNews-vectors-negative300.bin](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g). This will need to b e unzipped. Then place the unzipped .bin file inside the COVID19_SentimentAnalysis folder.
@@ -25,9 +25,9 @@ The project implementation consists of the following methods:
             sentimentanalysis-venv\Scripts\activate.bat
 
    
-#### **III - Install python packages**
+###### **Install Dependencies**
 
             pip install -r requirements.txt        
 
-#### **IV - Run the script**
+###### **Run the script**
 Now, we are all set to run the script.
