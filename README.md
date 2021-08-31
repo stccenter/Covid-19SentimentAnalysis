@@ -1,4 +1,4 @@
-### **Introduction:Covid-19 Sentiment Analysis **
+### **Introduction:Covid-19 Sentiment Analysis**
 The project implementation consists of the following methods:
 1. A data pre-processing methodology to get rid of symbols and stopwords.
 2. A convolutional neural network (CNN) to train the model to classify social media posts based on categories ("medical research", "social events", "pandemic data", "administrative policy").
