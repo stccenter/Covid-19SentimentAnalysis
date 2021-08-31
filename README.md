@@ -1,5 +1,5 @@
-### **Introduction**
-This git repository is created for Covid-19 Sentiment Analysis project. This project implementation consists of the following methods:
+### **Introduction:Covid-19 Sentiment Analysis **
+The project implementation consists of the following methods:
 1. A data pre-processing methodology to get rid of symbols and stopwords.
 2. A convolutional neural network (CNN) to train the model to classify social media posts based on categories ("medical research", "social events", "pandemic data", "administrative policy").
 3. Accuracy plots for each epoch 
