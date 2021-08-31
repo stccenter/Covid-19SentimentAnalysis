@@ -29,5 +29,5 @@ The project implementation consists of the following methods:
 
             pip install -r requirements.txt        
 
-###### **Run the script**
+## **Run the model**
 Now, we are all set to run the script.
