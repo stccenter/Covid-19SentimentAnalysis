@@ -34,3 +34,7 @@ The project implementation consists of the following methods:
 Now, we are all set to run the script.
 
             python tweets_classification.py
+
+## **Walkthrough Video**
+**CPU-based implementation**\
+[<img src="https://github.com/stccenter/Covid-19SentimentAnalysis/blob/main/Images/Videos.jpg" width="60%">](https://www.youtube.com/watch?v=q2AGI-ijKUE)
