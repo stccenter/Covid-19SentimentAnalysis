@@ -36,5 +36,5 @@ Now, we are all set to run the script.
             python tweets_classification.py
 
 ## **Walkthrough Video**
-**CPU-based implementation**\
+**Implementation**\
 [<img src="https://github.com/stccenter/Covid-19SentimentAnalysis/blob/main/Images/Videos.jpg" width="60%">](https://www.youtube.com/watch?v=q2AGI-ijKUE)
