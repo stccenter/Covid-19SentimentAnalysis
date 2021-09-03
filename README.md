@@ -16,7 +16,7 @@ The project implementation consists of the following methods:
 ###### **Set up the virtual environment**
 1. Create a new folder and name it as COVID19_SentimentAnalysis.
 2. Copy news_classification.py from cloned repository and place it inside COVID19_SentimentAnalysis folder.
-3. Download [GoogleNews-vectors-negative300.bin](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g). This will need to b e unzipped using 7-Zip. Then place the unzipped .bin file inside the COVID19_SentimentAnalysis folder.
+3. Download [GoogleNews-vectors-negative300.bin](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g). This will need to be unzipped using 7-Zip. Then place the unzipped .bin file inside the COVID19_SentimentAnalysis folder.
 4. Download the training_data_set_unduplicate.csv from the clones repository and place it inside the COVID19_SentimentAnalysis folder.
 5. In Visual Studio Code, go to Terminal and run the below in cmd terminal. This creates a virtual environment called "sentimentanalysis-venv"
    
