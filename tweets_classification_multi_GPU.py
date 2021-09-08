@@ -11,6 +11,9 @@ from keras.utils import to_categorical
 from nltk.corpus import stopwords
 from sklearn.utils import shuffle
 import re
+import time
+
+start = time.time()
 
 STOPWORDS = set(stopwords.words("english"))
 MAX_SEQUENCE_LENGTH = 30
@@ -77,7 +80,7 @@ from keras.optimizers import RMSprop
 from sklearn.metrics import recall_score, precision_score, f1_score, accuracy_score
 from sklearn import metrics
 from sklearn.metrics import precision_recall_fscore_support as score
-
+import tensorflow as tf
 # Create a MirroredStrategy.
 strategy = tf.distribute.MirroredStrategy()
 print("Number of devices: {}".format(strategy.num_replicas_in_sync))
@@ -104,7 +107,8 @@ Y_pred = np.argmax(y_pred,axis=1)
 Y_val = np.argmax(y_val,axis = 1)
 print(metrics.classification_report(Y_val, Y_pred))
 #########
-
+end = time.time()
+print (str(end-start))
 import matplotlib.pyplot as plt
 plt.plot(history.history['categorical_accuracy'])
 plt.plot(history.history['val_categorical_accuracy'])
