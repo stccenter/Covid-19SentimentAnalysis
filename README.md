@@ -37,4 +37,4 @@ Now, we are all set to run the script.
 
 ## **Walkthrough Video**
 **Implementation**\
-[<img src="https://github.com/stccenter/Covid-19SentimentAnalysis/blob/main/Images/Videos.jpg" width="60%">](https://www.youtube.com/watch?v=q2AGI-ijKUE)
+[<img src="https://github.com/stccenter/Covid-19SentimentAnalysis/blob/main/Images/Videos.jpg" width="60%">](https://youtu.be/EP7j71imXo8)
