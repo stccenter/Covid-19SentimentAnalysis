@@ -6,7 +6,7 @@ The project implementation consists of the following methods:
 
 ### **Software requirements**
 1. Python 3.7 or above
-2. Python IDE (Visual Studio Code)
+2. Visual Studio Code or another Python IDE
 3. [7-Zip](https://www.7-zip.org/download.html)
 
 ### **Standard CPU-based implementation**
