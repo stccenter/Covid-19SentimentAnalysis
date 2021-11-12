@@ -12,10 +12,11 @@ from nltk.corpus import stopwords
 from sklearn.utils import shuffle
 import re
 import time
+import nltk
 
 start = time.time()
 
-STOPWORDS = set(stopwords.words("english"))
+STOPWORDS = nltk.download('stopwords')
 MAX_SEQUENCE_LENGTH = 30
 MAX_NB_WORDS = 2000000
 EMBEDDING_DIM = 300

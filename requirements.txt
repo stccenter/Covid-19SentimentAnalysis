@@ -16,3 +16,4 @@ pillow
 kiwisolver
 cycler
 pyparsing
+matplotlib
