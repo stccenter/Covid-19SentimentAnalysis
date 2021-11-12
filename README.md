@@ -55,6 +55,13 @@ The tweet classification is tested in five computing platforms.\
   &emsp; (E) [AWS Deep Learning Ubuntu 18.04 LTS](#e-134-aws-deep-learning-ubuntu-1804-lts)
 
 **Overview of Software Requirements**
+|Open-source packages|Version|
+| ---- | --------- |
+|Python|3.8|
+|NVIDIA|For Windows - 441.22|
+|NVIDIA|For Ubuntu Server - 450.51.06|
+|CUDA|11.0|
+|TensorFlow|2.4.1|
 
 ### **A: 1.3.0 Windows Laptop with Graphics Card**
 
