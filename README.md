@@ -52,7 +52,7 @@ The tweet classification is tested in five computing platforms.\
   &emsp; (B) [AWS Windows g4dn instance with 4 NVIDIA Tesla T4](#b-131-aws-g4dn-instance-with-nvidia-tesla-t4)\
   &emsp; (C) [Windows Laptop with Intel Core i7-8550U CPU](#c-132-windows-laptop-with-intel-core-i7-8550u-cpu)\
   &emsp; (D) [Ubuntu on Windows 10](#d-133-ubuntu-on-windows-10)\
-  &emsp; (E) [AWS Deep Learning Ubuntu 18.04 LTS](#e-134-aws-deep-learning-ubuntu-1804-lts)\
+  &emsp; (E) [AWS Deep Learning Ubuntu 18.04 LTS](#e-134-aws-deep-learning-ubuntu-1804-lts)
 
 **Overview of Software Requirements**
 
