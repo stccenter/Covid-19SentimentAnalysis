@@ -58,7 +58,7 @@ The tweet classification is tested in five computing platforms.\
 |Open-source packages|Version|
 | ---- | --------- |
 |Python|3.8|
-|NVIDIA|For Windows - 441.22|
+|NVIDIA|For Windows - 496.49|
 |NVIDIA|For Ubuntu Server - 450.51.06|
 |CUDA|11.0|
 |TensorFlow|2.4.1|
@@ -73,23 +73,19 @@ Go to Windows Start menu and type device manager. Then expand your Display Adapt
 
 ***A: 1.3.0.1 Download and Install the NVIDIA driver***
 
-* Step 1: [Go to install the NVIDIA Driver.](https://www.nvidia.com/Download/index.aspx?lang=en-us)
+* Step 1: Use the [link](https://www.nvidia.com/Download/driverResults.aspx/183364/en-us) to download the NVIDIA driver.
 
-* Step 2 Provide NVIDIA driver details according to your NVIDIA product. The below screenshot shows the selection based on “NVIDIA GeForce GTX 1640 Ti with Max-Q Design”.
+* Step 2: Download the driver.
 
-  ![Caption: Selection for “NVIDIA GeForce GTX 1640 Ti with Max-Q Design”](Images/NVIDIA/geforce.png)
+* Step 3: Install downloaded NVIDIA driver.
 
-* Step 3: Click on Search and download the driver.
-
-* Step 4: Install downloaded NVIDIA driver.
-
-* Step 5: You will find CUDA subfolder inside “NVIDIA GPU computing toolkit” folder inside C drive “Program Files” folder (C:\Program Files\NVIDIA GPU Computing Toolkit).
+* Step 4: You will find CUDA subfolder inside “NVIDIA GPU computing toolkit” folder inside C drive “Program Files” folder (C:\Program Files\NVIDIA GPU Computing Toolkit).
 
 ***A: 1.3.0.2 CUDA Toolkit Installation***
 
 * Step 1: [Go to CUDA Toolkit Archive.](https://developer.nvidia.com/cuda-toolkit-archive)
 
-* Step 2: Find the latest release of CUDA Toolkit.
+* Step 2: Find the CUDA Toolkit 11.0 version.
 
   ![Caption: Latest Release of CUDA](Images/NVIDIA/cuda11_0.png)
 
@@ -99,7 +95,7 @@ Go to Windows Start menu and type device manager. Then expand your Display Adapt
 
 * Step 4: Click download.
 
-* Step 5: Double click the downloaded exe file (Example: cuda_11.4.1_471.41_win10.exe) and follow the on-screen prompts.
+* Step 5: Double click the downloaded exe file (Example: cuda_11.0.2_451.48_win10.exe) and follow the on-screen prompts.
 
 ***A: 1.3.0.3 Download cuDNN***
 
@@ -107,19 +103,17 @@ Go to Windows Start menu and type device manager. Then expand your Display Adapt
 
 * Step 2: Click Download cuDNN. If you are a first-time user, you need to create a user account and consent to the cuDNN Software License Agreement.
 
-* Step 3: Select the right version of cuDNN. Please note that the version of CUDA and cuDNN should match. In this case, I download cuDNN version 8.2.2 for CUDA 11.4.
-
-  ![Caption: cuDNN Download](Images/NVIDIA/cudnn8_2_2.png)
+* Step 3: Select the right version of cuDNN. Please note that the version of CUDA and cuDNN should match. In this case, I download cuDNN version 8.0.5 for CUDA 11.0.
 
 * Step 4: It will download as a compressed folder. Extract the compressed folder.
 
 * Step 5: The extracted folder has “cuda” subfolder that matches with the “CUDA” subfolder in C:\Program Files\NVIDIA GPU Computing Toolkit.
 
-* Step 6: Now, copy cudnn64_8.dll from the bin of the extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\bin) and paste it in the bin folder inside CUDA folder of NVIDIA GPU Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin).
+* Step 6: Now, copy cudnn64_8.dll from the bin of the extracted folder (C:\Users\anush\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\bin) and paste it in the bin folder inside CUDA folder of NVIDIA GPU Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin).
 
-* Step 7: Copy cudnn.h file from include of the extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\include) and paste it in the bin folder inside CUDA folder of NVIDIA_GPU_Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include).
+* Step 7: Copy cudnn.h file from include of the extracted folder (C:\Users\anush\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\include) and paste it in the bin folder inside CUDA folder of NVIDIA_GPU_Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include).
 
-* Step 8: Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64).
+* Step 8: Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\anush\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\lib\x64).
 
 ***A: 1.3.0.4 Clone the Covid-19 sentiment analysis repository and download training data***
 
@@ -191,9 +185,14 @@ set CUDA_VISIBLE_DEVICES=0 & python tweets_classification_multi_GPU.py
 
 ***A: 1.3.0.9 Execution time***
 
-The total time for execution is 1271.06 seconds or 21.18 minutes.
+The total time for execution is 46.34 seconds.
 
-![Caption: Time taken screenshot](Images/lp-single-gpu-output.png)
+![Caption: GPU output](Images/geforcegpu/gpu-output.PNG)
+
+It should also display model accuracy graph similar to this:
+
+![Caption: Model graph](Images/geforcegpu/gpumodelaccuracy.png)
+
 
 ### **B: 1.3.1 AWS g4dn instance with NVIDIA Tesla T4**
 
@@ -261,11 +260,11 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\NVIDIA Corporation\Global\GridLicensing" 
 
 * Step 6: The extracted folder has “cuda” subfolder that matches with the “CUDA” subfolder in C:\Program Files\NVIDIA GPU Computing Toolkit.
 
-* Step 7: Now, copy all dll files from the bin of the extracted folder (C:\Users\Administrator\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\bin) and paste it in the bin folder inside CUDA folder of NVIDIA GPU Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin).
+* Step 7: Now, copy all dll files from the bin of the extracted folder (C:\Users\Administrator\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\bin) and paste it in the bin folder inside CUDA folder of NVIDIA GPU Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin).
 
-* Step 8: Copy cudnn.h file from include of the extracted folder (C:\Users\Administrator\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\include) and paste it in the include folder inside CUDA folder of NVIDIA_GPU_Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include).
+* Step 8: Copy cudnn.h file from include of the extracted folder (C:\Users\Administrator\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\include) and paste it in the include folder inside CUDA folder of NVIDIA_GPU_Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include).
 
-* Step 9: Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\Administrator\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64).
+* Step 9: Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\Administrator\Downloads\cudnn-11.0-windows-x64-v8.0.5.39\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\lib\x64).
 
 ***B: 1.3.1.2 Set up the Virtual Environment***
 
