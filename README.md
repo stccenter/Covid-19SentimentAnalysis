@@ -413,16 +413,7 @@ conda install pip
 
 Download the training data at this [link](https://drive.google.com/file/d/13W_etsy1A4czDTDHrPVliOImAfTlRSze/view) and place it in a folder named sentimentpackage on your desktop 
 
-Install the required packages using the command:
-
-```
-pip install -r requirements.txt
-```
-
-[Download the zip](https://github.com/stccenter/PM2.5Retrieval/archive/refs/heads/main.zip) containing your script and place the fcontents of the zip in the sentimentpackage folder 
-
-
-*  **Step 4**: Run the Script
+[Download the zip](https://github.com/stccenter/PM2.5Retrieval/archive/refs/heads/main.zip) containing your script and place the contents of the zip in the sentimentpackage folder 
 
 To change to the desktop directory, Enter the Command: 
 
@@ -435,6 +426,14 @@ To change to the directory to your folder, Enter the Command:
 ```
 cd sentimentpackage
 ```
+
+Install the required packages using the command:
+
+```
+pip install -r requirements.txt
+```
+
+*  **Step 4**: Run the Script
 
 To run the Script enter the command: 
 
