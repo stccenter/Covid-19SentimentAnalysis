@@ -413,7 +413,7 @@ conda install pip
 
 Download the training data at this [link](https://drive.google.com/file/d/13W_etsy1A4czDTDHrPVliOImAfTlRSze/view) and place it in a folder named sentimentpackage on your desktop 
 
-[Download the zip](https://github.com/stccenter/PM2.5Retrieval/archive/refs/heads/main.zip) containing your script and place the contents of the zip in the sentimentpackage folder 
+[Download the zip](https://github.com/stccenter/Covid-19SentimentAnalysis/archive/refs/heads/main.zip) containing your script and place the contents of the zip in the sentimentpackage folder 
 
 To change to the desktop directory, Enter the Command: 
 
