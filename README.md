@@ -386,6 +386,61 @@ It should also display model accuracy graph similar to this:
 
 ### **D: 1.3.3 Ubuntu on Windows 10**
 
+
+*  **Step 1**: Create Conda Environment
+
+Enter This command to create the conda environment:
+
+```
+conda create -n sentiment-env python=3.8
+```
+
+*  **Step 2**: Activate the Conda Environment
+
+To activate the conda environment you created, enter this command:
+
+```
+conda activate sentiment-env
+```
+
+Followed by this command to install pip to the conda environment:
+
+```
+conda install pip
+```
+
+*  **Step 3**: Download the Training Data and Required python packages
+
+Download the training data at this [link](https://drive.google.com/file/d/13W_etsy1A4czDTDHrPVliOImAfTlRSze/view) and place it in a folder named sentimentpackage on your desktop 
+
+[Download the zip](https://github.com/stccenter/PM2.5Retrieval/archive/refs/heads/main.zip) containing your script and place the contents of the zip in the sentimentpackage folder 
+
+To change to the desktop directory, Enter the Command: 
+
+```
+cd Desktop
+```
+
+To change to the directory to your folder, Enter the Command: 
+
+```
+cd sentimentpackage
+```
+
+Install the required packages using the command:
+
+```
+pip install -r requirements.txt
+```
+
+*  **Step 4**: Run the Script
+
+To run the Script enter the command: 
+
+```
+python tweets_classification.py 
+```
+
 ### **E: 1.3.4 AWS Deep Learning Ubuntu 18.04 LTS**
 
 * Step 1 T:he AWS Deep Learning AMI comes with different versions of CUDA. Please switch to the correct CUDA version, **11.0**, by using the following commands:
