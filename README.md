@@ -7,9 +7,9 @@ The project implementation consists of the following methods:
 3. Accuracy plots for each epoch 
 
 ## Project Goal
-The goal of this project was to... Explain the goal.
+In December 2019, COVID-19 started its outbreak in Wuhan, China. It quickly spread to nearly all the countries in the world. There were many news and reports published every day since December 2019. It will be very time-consuming to read all the news and categorize all the news from the website for research purposes. Therefore, a method of automatic classification of news is needed for categorizing news in an efficient manner.
 
-This project began in XXXX, and is still ongoing/ended in XXXX/etc.
+This project began in December of 2019, and ended in May 2020.
 
 Please contact Zifu Wang with questions about this project.
 
@@ -43,7 +43,9 @@ Please see the detailed implementation guidance provided below or download it as
 Data Understanding section on how the data was obtained. 
 
 ## 1.2 Overall Training Dataset 
-What does the training dataset look like? What does it encompass?
+One such training dataset is “Coronavirus: A timeline of how the deadly COVID-19 outbreak is evolving” (https://www.pharmaceutical-technology.com/), which recorded the timeline of big events of COVID-19 have occurred since December 2019.
+
+Another data source is China Data Lab, 2020, "Global News" (https://dataverse.harvard.edu/), which is provided by Harvard Dataverse. This is a CSV file which crawled weblink of January news related COVID-19. It contains 81892 lines of data. However, some of the links have been invalid because it has been a long time since the news were published.
 
 ## 1.3 Computing Platforms
 
